@@ -1,0 +1,24 @@
+name: build
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  dist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      - uses: syphar/restore-virtualenv@v1
+      - run: pip install '.[publish]'
+      - run: |
+          python -m build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/*
+          if-no-files-found: ignore
