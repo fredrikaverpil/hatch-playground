@@ -21,6 +21,7 @@ pip install --upgrade --constraint=requirements.txt --editable='.[dev]'
 ```bash
 # requires that you ran `pip install ... --editable='[dev]'`
 # so that the PEP-517 build frontend is available
+# OR for a minimal setup, run: "pip install build" prior to running this command
 python -m build
 ```
 
