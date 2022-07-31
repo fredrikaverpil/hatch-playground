@@ -13,10 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
       - uses: syphar/restore-virtualenv@v1
       - run: pip install '.[build,publish]'
-      - run: |
-          python -m build --sdist
+      - run: python -m build --sdist
       - uses: actions/upload-artifact@v3
         with:
           path: dist/*
@@ -29,10 +30,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
       - uses: syphar/restore-virtualenv@v1
       - run: pip install '.[publish]'
-      - run: |
-          python -m cibuildwheel --output-dir wheelhouse
+      - run: python -m cibuildwheel --output-dir wheelhouse
       - uses: actions/upload-artifact@v3
         with:
           path: ./wheelhouse/*.whl
