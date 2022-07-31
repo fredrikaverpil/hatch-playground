@@ -69,7 +69,7 @@ pip install --upgrade --constraint=requirements.txt --editable='.[lint]'
 # and so on...
 ```
 
-🍌 it's likely a good idea to pin some important development dependencies to their major versions.
+🍌 it's likely a good idea to range-pin some important development dependencies to their major versions.
 
 Update these dependencies manually from time to time, if you pin them in any way. Check what is outdated using pip:
 
