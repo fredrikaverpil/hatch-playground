@@ -17,7 +17,7 @@ jobs:
           python-version-file: ".python-version"
       - uses: syphar/restore-virtualenv@v1
       - run: pip install '.[docs]'
-      - run: run mkdocs build
+      - run: mkdocs build
 
       - name: deploy
         if: ${{ github.ref == 'refs/heads/master' }}
