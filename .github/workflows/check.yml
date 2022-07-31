@@ -38,7 +38,7 @@ jobs:
       - run: pip install -c requirements.txt '.[lint]'
       - run: |
           flake8 src tests
-          bandit src tests
+          bandit --recursive src tests
 
   types:
     runs-on: ubuntu-latest
