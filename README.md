@@ -81,7 +81,7 @@ CI should fail tests etc if some optional dependency is acting up. Then pin this
 
 Why does anyone need this?
 
-I've used [Poetry](https://github.com/python-poetry/poetry) extensively for the last couple of years both for open source and internal/proprietary applications and libraries. There is a considerable amount of churn over time with deveoloper dependencies if you maintain many projects. Especially since I average around 30 developer/CI dependencies per Python repository.
+I've used [Poetry](https://github.com/python-poetry/poetry) extensively for the last couple of years both for open source and internal/proprietary applications and libraries. There is a considerable amount of churn over time with developer dependencies if you maintain many projects. Especially since I average around 30 developer/CI dependencies per Python repository.
 
 This whole project started as a result of Poetry not allowing you to specify unpinned dependencies, or range-pin dependencies.
 
