@@ -65,7 +65,7 @@ lint = [
   "isort",
   "flake8",
   "flake8-bugbear",
-  "flake8-bandit"
+  "bandit"
 ]
 types = [
   "mypy",
