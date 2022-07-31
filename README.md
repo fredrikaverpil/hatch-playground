@@ -59,7 +59,7 @@ Pip-tools is used to manage all production dependencies. Edit `requirements.in`,
 pip-compile --no-header --no-annotate
 ```
 
-Dependabot supports pip-tools and can be set up to prompt for updating these dependencies, one by one.
+Dependabot supports pip-tools and can be [set up](https://github.com/fredrikaverpil/hatch-playground/blob/main/.github/dependabot.yml) to prompt for updating these dependencies, one by one.
 
 ### Optional dependencies
 
