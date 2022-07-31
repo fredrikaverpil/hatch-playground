@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
       - uses: syphar/restore-virtualenv@v1
-      - run: pip install '.[publish]'
+      - run: pip install '.[build,publish]'
       - run: |
           python -m build --sdist
       - uses: actions/upload-artifact@v3
