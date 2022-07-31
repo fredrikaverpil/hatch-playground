@@ -48,6 +48,10 @@ python -m build
 
 The git tag can be bumped accordingly by CI on merge to the main branch, using conventional commits.
 
+### Publish
+
+Use any tool of your liking. I'm using [Twine](https://github.com/pypa/twine/) (part of the developer dependencies). This is likely something you want to be part of your CI, triggered on a new git tag/release.
+
 ## Maintaining the dependencies
 
 I've opted for hard-pinning all my production dependencies but allowing a more lenient approach for development dependencies.
