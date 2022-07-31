@@ -1,0 +1,99 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hatch-playground"
+description = 'Project maintenance with Hatch'
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Fredrik Averpil", email = "fredrik.averpil@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version", "dependencies"]
+
+# until Python has an officially PEP-supported lockfile mechanism,
+# let's define dependencies with hatch instead, so pip-tools can be used
+# to pin dependencies.
+# dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/fredrikaverpil/hatch-playground#readme"
+Issues = "https://github.com/fredrikaverpil/hatch-playground/issues"
+Source = "https://github.com/fredrikaverpil/hatch-playground"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.metadata.hooks.requirements_txt]
+filename = "requirements.txt"
+
+[tool.hatch.build.targets.sdist]
+[tool.hatch.build.targets.wheel]
+packages = ["src/hatch_playground"]
+
+[project.optional-dependencies]
+tests = [
+  "pytest",
+  "pytest-randomly",
+  "pytest-cov",
+  "pytest-mock",
+  "pytest-dotenv",
+  "pytest-freezegun",
+  "responses",
+  "factory-boy"
+]
+docs = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocs-awesome-pages-plugin"
+]
+lint = [
+  "black",
+  "isort",
+  "flake8",
+  "flake8-bugbear",
+  "flake8-bandit"
+]
+types = [
+  "mypy",
+  "types-freezegun",
+  "types-python-dateutil"
+]
+security= [
+  "pip-audit",
+  "pip-licenses",
+  "safety"
+]
+publish = [
+  "twine"
+]
+dev = [
+  "hatch-playground[tests,docs,lint,types,security,publish]",
+  "pip-tools",
+  "pre-commit",
+  "debugpy"
+]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
