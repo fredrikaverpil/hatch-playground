@@ -78,11 +78,14 @@ security= [
   "safety"
 ]
 publish = [
-  "build",
+  "cibuildwheel==2.8.1",
   "twine"
 ]
+build = [
+  "build"
+]
 dev = [
-  "hatch-playground[tests,docs,lint,types,security,publish]",
+  "hatch-playground[tests,docs,lint,types,security,build,publish]",
   "pip-tools",
   "pre-commit",
   "debugpy"
