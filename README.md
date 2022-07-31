@@ -14,8 +14,7 @@ Python project boilerplate;
 In an activated virtual environment, run:
 
 ```bash
-# install with all developer dependencies, as editable (developer mode)
-# and constrained to the pinned production dependencies
+# install/update project's production and developer dependencies
 pip install --upgrade --constraint=requirements.txt --editable='.[dev]'
 ```
 
@@ -39,7 +38,7 @@ git tag v0.1.0
 python -m build
 ```
 
-🍑 for continuous deployments, have CI create the tag based incremental numbering or [conventional commits](https://www.conventionalcommits.org/).
+🍑 for continuous deployments, have CI create the tag based on incremental numbering or [conventional commits](https://www.conventionalcommits.org/).
 
 ### Publish
 
