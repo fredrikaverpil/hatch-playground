@@ -78,11 +78,11 @@ security= [
   "safety"
 ]
 publish = [
+  "build",
   "twine"
 ]
 dev = [
   "hatch-playground[tests,docs,lint,types,security,publish]",
-  "build",
   "pip-tools",
   "pre-commit",
   "debugpy"
