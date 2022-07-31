@@ -58,7 +58,8 @@ tests = [
 docs = [
   "mkdocs",
   "mkdocs-material",
-  "mkdocs-awesome-pages-plugin"
+  "mkdocs-awesome-pages-plugin",
+  "mkdocs-include-markdown-plugin"
 ]
 lint = [
   "black",
