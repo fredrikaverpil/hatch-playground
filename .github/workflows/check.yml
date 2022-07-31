@@ -36,6 +36,10 @@ jobs:
           python-version-file: ".python-version"
       - uses: syphar/restore-virtualenv@v1
       - run: pip install -c requirements.txt '.[lint]'
+
+      # temporary! remove later
+      - run: pip uninstall -y flake8-bandit
+
       - run: |
           flake8 src tests
           bandit --recursive src tests
