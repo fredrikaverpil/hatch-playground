@@ -27,12 +27,11 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-20.04, windows-2019, macOS-11]
-        python-version: ["2.x", "3.x", "pypy2.7", "pypy3.7", "pypy3.8"]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.x"
       - uses: syphar/restore-virtualenv@v1
       - run: pip install '.[publish]'
       - run: python -m cibuildwheel --output-dir wheelhouse
