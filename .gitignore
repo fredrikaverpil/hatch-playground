@@ -1,3 +1,5 @@
 .python-version
 .venv
 dist
+.mypy_cache
+.pytest_cache
