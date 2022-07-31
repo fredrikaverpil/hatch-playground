@@ -1,13 +1,6 @@
-# hatch-playground
+# 😶‍🌫️ hatch-playground
 
-Project maintenance with [hatch's hatchling](https://github.com/pypa/hatch), [hatch-vcs](https://github.com/ofek/hatch-vcs), [hatch-requirements-txt](https://github.com/repo-helper/hatch-requirements-txt); a boilerplate.
-
-Uses the following PEPs:
-- [PEP-621](https://peps.python.org/pep-0621/) - Storing project metadata in pyproject.toml
-- [PEP-517](https://peps.python.org/pep-0517/) - A build-system independent format for source
-- [PEP-508](https://peps.python.org/pep-0508/) - Dependency specification for Python Software Packages
-- [PEP-440](https://peps.python.org/pep-0440/) - Version Identification and Dependency Specification
-...and probably others.
+Python project maintenance with [hatch's hatchling](https://github.com/pypa/hatch), [hatch-vcs](https://github.com/ofek/hatch-vcs), [hatch-requirements-txt](https://github.com/repo-helper/hatch-requirements-txt); a boilerplate.
 
 ## Quickstart
 
