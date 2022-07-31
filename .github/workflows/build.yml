@@ -17,7 +17,7 @@ jobs:
         with:
           python-version-file: ".python-version"
       - uses: syphar/restore-virtualenv@v1
-      - run: pip install '.[build,publish]'
+      - run: pip install '.[build]'
       - run: python -m build
       - uses: actions/upload-artifact@v3
         with:
