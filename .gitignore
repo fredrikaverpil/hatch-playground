@@ -3,4 +3,4 @@
 dist
 .mypy_cache
 .pytest_cache
-docs/site
+site
