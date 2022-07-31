@@ -82,6 +82,7 @@ publish = [
 ]
 dev = [
   "hatch-playground[tests,docs,lint,types,security,publish]",
+  "build",
   "pip-tools",
   "pre-commit",
   "debugpy"
