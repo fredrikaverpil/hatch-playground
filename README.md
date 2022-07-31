@@ -34,7 +34,7 @@ git tag v0.1.0
 python -m build
 ```
 
-🍑 for continuous deployments, have CI create the tag based incremental numbering or conventional commits.
+🍑 for continuous deployments, have CI create the tag based incremental numbering or [conventional commits](https://www.conventionalcommits.org/).
 
 ### Publish
 
