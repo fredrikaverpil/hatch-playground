@@ -19,16 +19,14 @@ pip install --upgrade --constraint=requirements.txt --editable='.[dev]'
 ### Build project
 
 ```bash
-# install PEP-517 front-end tools
-pip install build
-
-# build the project's distributables
+# requires that you ran `pip install ... --editable='[dev]'`
+# so that the PEP-517 build frontend is available
 python -m build
 ```
 
 ### Release
 
-Since this project uses VCS (git) to determine the package version, first make a git tag, then build the project:
+Since this project uses VCS (git) to determine the package version, first make a git tag (following the [PEP-440](https://peps.python.org/pep-0440/) standard), then build the project:
 
 ```bash
 git tag v0.1.0
