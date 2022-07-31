@@ -89,7 +89,7 @@ I've used [Poetry](https://github.com/python-poetry/poetry) extensively for the 
 
 This whole project started as a result of Poetry not allowing you to specify unpinned dependencies, or range-pin dependencies.
 
-Therefore I created [poetry-update](https://github.com/fredrikaverpil/poetry-update), a project which aims to easen the dependabot fatigue for (developer-) dependencies that change often, and where you likely want to always use the latest and greatest. However, this is like a bandaid for an inflexible dependency management system in my opinion.
+Therefore I created [poetry-update](https://github.com/fredrikaverpil/poetry-update), a project which aims to easen the dependabot fatigue for (developer-) dependencies that change often, and where you likely want to always use the latest and greatest. However, this is like a bandaid for a somewhat inflexible dependency management system in my opinion.
 
 Because of this, I set out to see what can be offered by the packaging community outside of the Poetry ecosystem.
 
