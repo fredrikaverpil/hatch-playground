@@ -64,9 +64,9 @@ Different dependency groups are specified in `pyproject.toml` under `[project.op
 These can be installed by CI or (optionally) in development. Example, where we make sure we constrain the production dependencies to the pinned ones:
 
 ```bash
-pip install --upgrade -c requirements.txt --editable='.[tests]'
-pip install --upgrade -c requirements.txt --editable='.[docs]'
-pip install --upgrade -c requirements.txt --editable='.[lint]'
+pip install --upgrade --constraint=requirements.txt --editable='.[tests]'
+pip install --upgrade --constraint=requirements.txt --editable='.[docs]'
+pip install --upgrade --constraint=requirements.txt --editable='.[lint]'
 # and so on...
 ```
 
