@@ -1,6 +1,10 @@
 # 😶‍🌫️ hatch-playground
 
-Python project maintenance with [hatch's hatchling](https://github.com/pypa/hatch), [hatch-vcs](https://github.com/ofek/hatch-vcs), [hatch-requirements-txt](https://github.com/repo-helper/hatch-requirements-txt); a boilerplate.
+Python project boilerplate;
+- Hard-pinned production dependencies via `requirements.txt` (and [pip-tools](https://github.com/jazzband/pip-tools)), managed via [dependabot](https://github.com/dependabot).
+- Lenient developer/CI dependencies management in `pyproject.toml`.
+- Uses the [hatchling](https://github.com/pypa/hatch) build system (part of [Hatch](https://github.com/pypa/hatch)).
+- Uses version management control via git tags ([hatch-vcs](https://github.com/ofek/hatch-vcs)).
 
 ## Quickstart
 
