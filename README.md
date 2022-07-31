@@ -4,7 +4,7 @@ Python project boilerplate;
 
 - Hard-pinned production dependencies via `requirements.txt` (and [pip-tools](https://github.com/jazzband/pip-tools)), managed via [dependabot](https://github.com/dependabot).
 - Lenient developer/CI dependencies management in `pyproject.toml`.
-- Uses the [hatchling](https://github.com/pypa/hatch) build system (part of [Hatch](https://github.com/pypa/hatch)).
+- Uses the [hatchling](https://github.com/pypa/hatch/tree/master/backend) build system (part of [Hatch](https://github.com/pypa/hatch)).
 - Uses version management control via git tags ([hatch-vcs](https://github.com/ofek/hatch-vcs)).
 
 ## Quickstart
