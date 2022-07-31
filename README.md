@@ -6,16 +6,12 @@ Python project maintenance with [hatch's hatchling](https://github.com/pypa/hatc
 
 ### Install project locally
 
-```bash
-# just install the project with the production dependencies
-# as editable (developer mode)
-pip install -e .
-```
+In an activated virtual environment, run:
 
 ```bash
 # install with all developer dependencies, as editable (developer mode)
 # and constrained to the pinned production dependencies
-pip install --upgrade -e '.[dev]' -c requirements.txt
+pip install --upgrade --constraint=requirements.txt --editable='.[dev]'
 ```
 
 ☝️ use this command from time to time to keep your local development environment's dependencies fresh.
