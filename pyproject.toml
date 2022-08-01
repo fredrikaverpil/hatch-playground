@@ -45,6 +45,7 @@ filename = "requirements.txt"
 packages = ["src/hatch_playground"]
 
 [project.optional-dependencies]
+# PEP-440
 tests = [
   "pytest",
   "pytest-randomly",
@@ -64,9 +65,9 @@ docs = [
 lint = [
   "black",
   "isort",
-  "flake8",
+  "flake8==4.*",  # https://github.com/tylerwince/flake8-bandit/issues/33
   "flake8-bugbear",
-  "bandit"
+  "flake8-bandit"
 ]
 types = [
   "mypy",
