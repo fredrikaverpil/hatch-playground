@@ -22,11 +22,19 @@ pip install --upgrade --constraint=requirements.txt --editable='.[dev]'
 
 ### Build project
 
+Use [pypa/build](https://github.com/pypa/build):
+
 ```bash
 # requires that you ran `pip install ... --editable='[dev]'`
 # so that the PEP-517 build frontend is available
 # OR for a minimal setup, run: "pip install build" prior to running this command
 python -m build
+```
+
+Instead of using [pypa/build](https://github.com/pypa/build), pip can be used:
+
+```bash
+pip wheel --no-deps --use-pep517 --wheel-dir=dist .
 ```
 
 ### Release
