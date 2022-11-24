@@ -65,7 +65,7 @@ docs = [
 lint = [
   "black",
   "isort",
-  "flake8==5.*",  # https://github.com/tylerwince/flake8-bandit/issues/33
+  "flake8==6.*",  # https://github.com/tylerwince/flake8-bandit/issues/33
   "flake8-bugbear",
   "flake8-bandit"
 ]
