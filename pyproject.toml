@@ -44,6 +44,9 @@ filename = "requirements.txt"
 [tool.hatch.build.targets.wheel]
 packages = ["src/hatch_playground"]
 
+# [tool.hatch.metadata]
+# allow-direct-references = true
+
 [project.optional-dependencies]
 # PEP-440
 tests = [
@@ -55,6 +58,9 @@ tests = [
   "pytest-freezegun",
   "responses",
   "factory-boy"
+  
+  # example of git+ssh dependency
+  # "mypkg @ git+ssh://git@github.com/myorg/mypkg.git@main"  # direct reference (always use latest)
 ]
 docs = [
   "mkdocs",
