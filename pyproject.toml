@@ -97,17 +97,39 @@ src = ["src", "tests"]
 line-length = 88  # black default
 select = [
     "E",  # pycodestyle (supersedes pep8)
+    "W",  # pycodestyle warnings
+    "D",  # pydocstyle
     "F",  # pyflakes
+    "UP", # pyupgrade
     "S",  # flake8-bandit
     "B",  # flake8-bugbear
     "I",  # isort
     "N",  # pep8-naming
-    "E",  # eradicate
-    "C",  # flake8-comprehensions
-    "F",  # flake8-boolean-trap
+    "ERA",  # eradicate
+    "C4",  # flake8-comprehensions
     "A",  # flake8-builtins
     "Q",  # flake8-quotes
-    "YTT" # flake8-2020
+    "YTT",  # flake8-2020
+    "ANN",  # flake8-annotations
+    "BLE",  # flake8-blind-except
+    "FBT",  # flake8-boolean-trap
+    "C90",  # mccabe
+    "T10",  # flake8-debugger
+    "EM",  # flake8-errmsg
+    "ICN",  # flake8-import-conventions
+    "T20",  # flake8-print
+    "RET",  # flake8-return
+    "SIM",  # flake8-simplify
+    "TID",  # flake8-tidy-imports
+    "ARG",  # flake8-unused-arguments
+    "PDV",  # pandas-vet
+    "PGV",  # pygrep-hooks
+    "PLC",  # pylint
+    "PLE",  # pylint
+    "PLR",  # pylint
+    "PLW",  # pylint
+    "RUF",  # ruff-specific rules
+
 ]
 ignore = []
 
