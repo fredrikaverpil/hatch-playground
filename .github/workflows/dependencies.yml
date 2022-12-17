@@ -34,7 +34,7 @@ jobs:
         with:
           python-version-file: ".python-version"
       - uses: syphar/restore-virtualenv@v1
-      - run: pip install -c requirements.txt '.[security]'
+      - run: pip install -c requirements.txt '.[dev]'
 
       - name: "Vulnerabilities: pip-audit"
         if: ${{ steps.changed-files.outputs.any_modified == 'true' || github.event_name == 'schedule' }}
