@@ -59,7 +59,6 @@ tests = [
   "pytest-freezegun",
   "responses",
   "factory-boy"
-  
   # example of git+ssh dependency
   # "mypkg @ git+ssh://git@github.com/myorg/mypkg.git@main"  # direct reference (always use latest)
 ]
@@ -80,8 +79,7 @@ types = [
 ]
 security= [
   "pip-audit",
-  "pip-licenses",
-  "safety"
+  "pip-licenses"
 ]
 build = [
   "build"
