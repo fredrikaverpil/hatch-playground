@@ -70,10 +70,7 @@ docs = [
 ]
 lint = [
   "black",
-  "isort",
-  "flake8==6.*",  # https://github.com/tylerwince/flake8-bandit/issues/33
-  "flake8-bugbear",
-  "flake8-bandit"
+  "ruff",
 ]
 types = [
   "mypy",
@@ -93,6 +90,31 @@ dev = [
   "pip-tools",
   "pre-commit",
   "debugpy"
+]
+
+[tool.ruff]
+src = ["src", "tests"]
+line-length = 88  # black default
+select = [
+    "E",  # pycodestyle (supersedes pep8)
+    "F",  # pyflakes
+    "S",  # flake8-bandit
+    "B",  # flake8-bugbear
+    "I",  # isort
+    "N",  # pep8-naming
+    "E",  # eradicate
+    "C",  # flake8-comprehensions
+    "F",  # flake8-boolean-trap
+    "A",  # flake8-builtins
+    "Q",  # flake8-quotes
+    "YTT" # flake8-2020
+]
+ignore = []
+
+[tool.ruff.per-file-ignores]
+"tests/*" = [
+    "S101",  # assert used
+    "S105"  # hardcoded password
 ]
 
 [tool.coverage.run]
