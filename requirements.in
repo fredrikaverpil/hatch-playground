@@ -1,2 +1,1 @@
 fastapi[all]==0.*
-sqlmodel==0.0.*
