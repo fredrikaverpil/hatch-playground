@@ -6,33 +6,40 @@
 #
 anyio==3.6.2
     # via
+    #   httpcore
     #   starlette
     #   watchgod
 asgiref==3.6.0
     # via uvicorn
 certifi==2022.12.7
-    # via requests
-charset-normalizer==2.1.1
-    # via requests
+    # via
+    #   httpcore
+    #   httpx
 click==8.1.3
     # via uvicorn
 dnspython==2.2.1
     # via email-validator
 email-validator==1.3.0
     # via fastapi
-fastapi[all]==0.80.0
+fastapi[all]==0.88.0
     # via -r requirements.in
 greenlet==2.0.1
     # via sqlalchemy
 h11==0.14.0
-    # via uvicorn
+    # via
+    #   httpcore
+    #   uvicorn
+httpcore==0.16.3
+    # via httpx
 httptools==0.5.0
     # via uvicorn
+httpx==0.23.1
+    # via fastapi
 idna==3.4
     # via
     #   anyio
     #   email-validator
-    #   requests
+    #   rfc3986
 itsdangerous==2.1.2
     # via fastapi
 jinja2==3.1.2
@@ -51,22 +58,23 @@ pyyaml==6.0
     # via
     #   fastapi
     #   uvicorn
-requests==2.28.1
-    # via fastapi
+rfc3986[idna2008]==1.5.0
+    # via httpx
 six==1.16.0
     # via python-multipart
 sniffio==1.3.0
-    # via anyio
+    # via
+    #   anyio
+    #   httpcore
+    #   httpx
 sqlalchemy==1.4.45
     # via -r requirements.in
-starlette==0.19.1
+starlette==0.22.0
     # via fastapi
 typing-extensions==4.4.0
     # via pydantic
 ujson==5.6.0
     # via fastapi
-urllib3==1.26.13
-    # via requests
 uvicorn[standard]==0.17.6
     # via fastapi
 uvloop==0.17.0
