@@ -36,6 +36,9 @@ jobs:
       - uses: syphar/restore-virtualenv@v1
       - run: pip install --requirement=requirements.txt '.[dev]'
 
+      # skip some dependencies
+      - run: pip uninstall setuptools
+
       - name: "Vulnerabilities: pip-audit"
         if: ${{ steps.changed-files.outputs.any_modified == 'true' || github.event_name == 'schedule' }}
         uses: pypa/gh-action-pip-audit@v1.0.3
