@@ -9,18 +9,6 @@
   "lockFileMaintenance": {
     "enabled": true,
     "branchTopic": "pip-compile-refresh",
-    "commitMessageAction": "Refresh pip-compile outputs",
-    "schedule": ["every weekend"]
-  },
-
-  "packageRules": [
-    {
-      "groupName": "all dependencies",
-      "groupSlug": "all-major-minor-patch",
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchManagers": ["pip_requirements"],
-      "schedule": ["every weekend"]
-    }
-  ]
+    "commitMessageAction": "Refresh pip-compile outputs"
+  }
 }
