@@ -26,7 +26,7 @@ jobs:
         with:
           python-version-file: ".python-version"
       - uses: syphar/restore-virtualenv@v1
-      - run: pip install -c requirements.txt '.[lint]'
+      - run: pip install --requirement=requirements.txt '.[lint]'
       - run: |
           ruff src tests
           black --check --diff src tests
@@ -39,5 +39,5 @@ jobs:
         with:
           python-version-file: ".python-version"
       - uses: syphar/restore-virtualenv@v1
-      - run: pip install -c requirements.txt '.[types]'
+      - run: pip install --requirement=requirements.txt '.[types]'
       - run: mypy src tests

@@ -15,7 +15,7 @@ In an activated virtual environment, run:
 
 ```bash
 # install/update project's production and developer dependencies
-pip install --upgrade --constraint=requirements.txt --editable='.[dev]'
+pip install --upgrade --requirement=requirements.txt --editable='.[dev]'
 ```
 
 ☝️ use this command from time to time to keep your local development environment's dependencies fresh.
@@ -75,9 +75,9 @@ Different dependency groups are specified in `pyproject.toml` under `[project.op
 These can be installed by CI or (optionally) in development. Example, where we make sure we constrain the production dependencies to the pinned ones:
 
 ```bash
-pip install --upgrade --constraint=requirements.txt --editable='.[tests]'
-pip install --upgrade --constraint=requirements.txt --editable='.[docs]'
-pip install --upgrade --constraint=requirements.txt --editable='.[lint]'
+pip install --upgrade --requirement=requirements.txt --editable='.[tests]'
+pip install --upgrade --requirement=requirements.txt --editable='.[docs]'
+pip install --upgrade --requirement=requirements.txt --editable='.[lint]'
 # and so on...
 ```
 
