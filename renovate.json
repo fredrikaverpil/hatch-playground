@@ -9,6 +9,15 @@
       "groupSlug": "all-major-minor-patch",
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["major", "minor", "patch"],
+
+      "matchManagers": ["pip_requirements"],
+      "postUpgradeTasks": {
+        "commands": [
+          "pip-compile --upgrade-package={{{depName}}}=={{{newVersion}}} $(basename {{{packageFile}}} .txt).in"
+        ],
+        "fileFilters": ["**/requirements*.txt"]
+      },
+
       "schedule": ["every weekend"]
     }
   ]
