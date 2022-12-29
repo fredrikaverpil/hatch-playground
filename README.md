@@ -60,10 +60,10 @@ I've opted for hard-pinning all my production dependencies but allowing a more l
 
 ### Required dependencies
 
-Pip-tools is used to manage all production dependencies. Edit `requirements.in`, then generate the `requirements.txt`:
+Pip-tools is used to manage all production dependencies. Edit `requirements.in`, then generate the `requirements.txt` by running the following command:
 
 ```bash
-pip-compile --no-header --no-annotate
+pip-compile
 ```
 
 Dependabot supports pip-tools and can be [set up](https://github.com/fredrikaverpil/hatch-playground/blob/main/.github/dependabot.yml) to prompt for updating these dependencies, one by one.
