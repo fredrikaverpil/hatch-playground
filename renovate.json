@@ -17,6 +17,11 @@
     {
       "matchManagers": ["pip_requirements"],
       "enabled": false
+    },
+    {
+      "matchManagers": ["github-actions", "pyenv"],
+      "enabled": true,
+      "automerge": true
     }
   ]
 }
