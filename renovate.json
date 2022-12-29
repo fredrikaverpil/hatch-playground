@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+
+  // Group together all updates
+  "packageRules": [
+    {
+      "groupName": "all dependencies",
+      "groupSlug": "all-major-minor-patch",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ]
+    }
+  ]
+}
