@@ -8,9 +8,7 @@ anyio==3.6.2
     # via
     #   httpcore
     #   starlette
-    #   watchgod
-asgiref==3.6.0
-    # via uvicorn
+    #   watchfiles
 certifi==2022.12.7
     # via
     #   httpcore
@@ -48,7 +46,7 @@ markupsafe==2.1.1
     # via jinja2
 orjson==3.8.3
     # via fastapi
-pydantic==1.10.3
+pydantic==1.10.4
     # via fastapi
 python-dotenv==0.21.0
     # via uvicorn
@@ -75,11 +73,11 @@ typing-extensions==4.4.0
     # via pydantic
 ujson==5.6.0
     # via fastapi
-uvicorn[standard]==0.17.6
+uvicorn[standard]==0.20.0
     # via fastapi
 uvloop==0.17.0
     # via uvicorn
-watchgod==0.8.2
+watchfiles==0.18.1
     # via uvicorn
 websockets==10.4
     # via uvicorn
