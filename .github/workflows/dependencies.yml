@@ -37,4 +37,4 @@ jobs:
 
       - name: "Vulnerabilities: pip-audit"
         if: ${{ steps.changed-files.outputs.any_modified == 'true' || github.event_name == 'schedule' }}
-        uses: pypa/gh-action-pip-audit@v1.0.4
+        uses: pypa/gh-action-pip-audit@v1.0.5
