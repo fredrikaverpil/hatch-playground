@@ -44,7 +44,7 @@ jinja2==3.1.2
     # via fastapi
 markupsafe==2.1.2
     # via jinja2
-orjson==3.8.5
+orjson==3.8.6
     # via fastapi
 pydantic==1.10.4
     # via fastapi
