@@ -1,2 +1,2 @@
-fastapi[all]==0.91.0
+fastapi[all]==0.92.0
 sqlalchemy==2.0.5
