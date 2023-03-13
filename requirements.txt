@@ -46,7 +46,7 @@ markupsafe==2.1.2
     # via jinja2
 orjson==3.8.7
     # via fastapi
-pydantic==1.10.5
+pydantic==1.10.6
     # via fastapi
 python-dotenv==1.0.0
     # via uvicorn
@@ -73,7 +73,7 @@ typing-extensions==4.5.0
     #   sqlalchemy
 ujson==5.7.0
     # via fastapi
-uvicorn[standard]==0.20.0
+uvicorn[standard]==0.21.0
     # via fastapi
 uvloop==0.17.0
     # via uvicorn
