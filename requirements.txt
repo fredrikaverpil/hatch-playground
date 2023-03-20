@@ -73,7 +73,7 @@ typing-extensions==4.5.0
     #   sqlalchemy
 ujson==5.7.0
     # via fastapi
-uvicorn[standard]==0.21.0
+uvicorn[standard]==0.21.1
     # via fastapi
 uvloop==0.17.0
     # via uvicorn
