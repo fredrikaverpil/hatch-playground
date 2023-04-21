@@ -63,7 +63,7 @@ sniffio==1.3.0
     #   anyio
     #   httpcore
     #   httpx
-sqlalchemy==2.0.5.post1
+sqlalchemy==2.0.10
     # via -r requirements.in
 starlette==0.25.0
     # via fastapi
